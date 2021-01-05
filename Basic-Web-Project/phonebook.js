@@ -8,7 +8,9 @@ let Contact = require('./models/Contact')
 let contacts = [
 	{
 		name:'Piter',
-		number:'+359856958624'
+		lastName:'Parkar',
+		number:'+359856958624',
+		email:'djhguyt@mail.bg'
 	},
 
 	{
@@ -27,8 +29,8 @@ function getPhonebook(){
 	return contacts.slice();
 }
 
-function addContact(name, number, email){
-	let contact = new Contact(name, number, email);
+function addContact(name, lastName, number, email){
+	let contact = new Contact(name, lastName, number, email);
 
 	contacts.push(contact)
 }
