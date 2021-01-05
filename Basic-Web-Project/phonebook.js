@@ -3,15 +3,33 @@
 	add methods for adding in the phonebook and getting it
 	export the methods
 */
+let Contact = require('./models/Contact')
 
-let phonebook = [];
+let contacts = [
+	{
+		name:'Piter',
+		number:'+359856958624'
+	},
+
+	{
+		name:'Maq',
+		number:'+359876879157'
+	},
+	
+	{
+		name:'George',
+		number:'+359867235716'
+	}
+];
 
 function getPhonebook(){
-	return phonebook;
+	return contacts.slice();
 }
 
-function addContact(contact){
-	phonebook.push(contact)
+function addContact(name, number){
+	let contact = new Contact(name, number);
+
+	contacts.push(contact)
 }
 
 module.exports = {
