@@ -3,14 +3,16 @@
   <thead>
     <tr>
       <th scope="col">Name</th>
+      <th scope="col">lastName</th>
       <th scope="col">Number</th>
-      <th scope="col">email</th>
+      <th scope="col">Email</th>
     </tr>
   </thead>
   <tbody>
     {{#each contacts}}
     <tr>
       <td>{{name}}</td>
+      <td>{{lastName}}</td>
       <td>{{number}}</td>
       <td>{{email}}</td>
     </tr>
@@ -31,13 +33,12 @@
       <div class="col-lg-10">
         <input type="text" autofocus="autofocus" name="number" title="Number" class="form-control" id="number" />
       </div>
-    <label for="email" class="col-lg-2 control-label">Email</label>
+    </div>  
+    <div class="form-group">
+      <label for="email" class="col-lg-2 control-label">Email</label>
       <div class="col-lg-10">
-        <input type="text" autofocus="autofocus" name="email" title="Email" class="form-control" id="email" />
-    
-    </div>
-    <div>
-
+        <input type="text" autofocus="autofocus" name="email" title="Email" class="form-control" id="name" />
+      </div>
     </div>
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">

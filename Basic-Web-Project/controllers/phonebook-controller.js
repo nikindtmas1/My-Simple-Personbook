@@ -10,7 +10,8 @@ module.exports = {
     // TODO: add a phonebook object to the array
     let name = req.body.name;
     let number = req.body.number;
-    phonebook.addContact(name, number);
+    let email = req.body.email;
+    phonebook.addContact(name, number, email);
 
     res.redirect('/');
   }

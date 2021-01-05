@@ -15,10 +15,11 @@ let contacts = [
 		name:'Maq',
 		number:'+359876879157'
 	},
-	
+
 	{
 		name:'George',
-		number:'+359867235716'
+		number:'+359867235716',
+		email:'njkhuiy@giti.com'
 	}
 ];
 
@@ -26,8 +27,8 @@ function getPhonebook(){
 	return contacts.slice();
 }
 
-function addContact(name, number){
-	let contact = new Contact(name, number);
+function addContact(name, number, email){
+	let contact = new Contact(name, number, email);
 
 	contacts.push(contact)
 }
